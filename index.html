@@ -1,101 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Projects</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h1 {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
         main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
             text-align: center;
         }
 
-        p {
-            color: #666;
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
+        .btn {
+            display: inline-block;
+            background-color: #333;
             color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 15px;
-        }
-
-        a {
+            padding: 10px 20px;
             text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-            transition: color 0.3s ease;
+            border-radius: 5px;
+            margin-top: 20px;
         }
 
-        a:hover {
-            color: #0056b3;
+        .btn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .projects {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-item {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-align: left;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to My Projects</h1>
-        </header>
-        <main>
-            <p>Here, you'll find a collection of my latest projects. Feel free to explore and get inspired!</p>
-            <ul>
-                <li>
-                    <a href="project1.html">Project 1</a> - Description of Project 1
-                </li>
-                <li>
-                    <a href="project2.html">Project 2</a> - Description of Project 2
-                </li>
-                <li>
-                    <a href="project3.html">Project 3</a> - Description of Project 3
-                </li>
-                <!-- Add more project items as needed -->
-            </ul>
-        </main>
-    </div>
+    <header>
+        <h1>Welcome to My Projects</h1>
+    </header>
+    <main>
+        <p>Explore my collection of projects and discover the world of coding!</p> <a href="#projects" class="btn">View
+            Projects</a>
+        <section class="projects" id="projects">
+            <div class="project-item">
+                <h2 class="project-title">Project 1</h2>
+                <p>Description of Project 1</p> <a href="project1.html" class="project-link">View Project</a>
+            </div>
+            <div class="project-item">
+                <h2 class="project-title">Project 2</h2>
+                <p>Description of Project 2</p> <a href="project2.html" class="project-link">View Project</a>
+            </div> <!-- Add more project items as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ankit. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
